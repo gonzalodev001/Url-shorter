@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<doctrine-mapping   xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                        https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="App\Url\Domain\Aggregate\Url" table="url">
+        <id name="id" type="string" column="id"  length="36"/>
+
+        <field name="urlLong" type="text" column="urlLong"/>
+        <field name="urlShorterned" length="100"  column="urlShorter"/>
+        <field name="numberVisited" type="integer" column="numberVisite"/>
+        <id name="idUser" type="string" column="idUser"  length="36"/>
+    </entity>
+
+</doctrine-mapping>

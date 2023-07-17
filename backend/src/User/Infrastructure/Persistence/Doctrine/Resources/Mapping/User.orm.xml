@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<doctrine-mapping   xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                        https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="App\User\Domain\Aggregate\User" table="user">
+        <id name="id" type="string" column="id"  length="36"/>
+
+        <field name="name" length="70" column="name" unique="true"/>
+        <field name="email" length="70" column="email" unique="true"/>
+        <field name="password"  length="100" column="password"/>
+        <field name="roles" type="json" column="roles"/>
+    </entity>
+
+</doctrine-mapping>

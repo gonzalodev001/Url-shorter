@@ -1,0 +1,15 @@
+controllers:
+    resource: ../../src/Controller/
+    prefix: /api/
+    name_prefix: shorterend
+    type: annotation
+
+ur:
+    resource: ../../src/Controller/Url/
+    prefix: /api/ur/
+    name_prefix: urlredirect
+    type: annotation
+
+kernel:
+    resource: ../../src/Kernel.php
+    type: annotation
